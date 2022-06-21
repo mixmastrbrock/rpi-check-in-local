@@ -1,16 +1,12 @@
 # Raspberry Pi as a Check-Ins Printer Station
 
-This document outlines the steps I use to set up a Raspberry Pi as a Check-in Printer Station. That is, a "computer" that connects to a Dymo printer and accepts print jobs from [Planning Center Check-Ins](https://planning.center/check-ins/download) running on a tablet, phone, or another computer.
+This document outlines the steps I use to set up a Raspberry Pi as a Check-in Check-in Station. [Planning Center Check-Ins](https://planning.center/check-ins/download) Forked from seven1m's main repo created as a headless operation. Below is a revised version of his notes for this application:
 
 This repo also includes a script that modifies the Pi and installs software.
 
-<img src="images/ipad_and_printer.jpg" alt="iPad and Dymo Printer" height="300">
-
 ## Why?
 
-Dymo printers are cheap, but I haven't found a way to connect them directly to an iPad. Since our church uses iPads for check-in, we like to print labels from them without a bulky, expensive PC/Mac sitting in the middle of it.
-
-The Raspberry Pi is an inexpensive alternative to a full computer, but it does take a bit more work to get it all set up correctly.
+Raspberry Pi's are cheap, and helps reduce our hardware cost, compared to iPads, so deploy these on 400's with a small monitor or touchscreen attached.
 
 ## How it Works
 
@@ -26,25 +22,17 @@ Of course, you can hide the Raspberry Pi away under a table or whatever.
 
 1. A [Planning Center Check-Ins](https://www.planningcenter.com/check-ins) subscription
 
-1. An iPad or other tablet to run Check-Ins app
-
 1. A Raspberry Pi 4 with at least 2 GB of RAM.
 
    This will *not* work on an older Raspberry Pi.
 
-1. A Dymo printer
+1. (optional) A Dymo printer
 
    I have only tested with the Dymo LabelWriter 450 and 450 Turbo.
 
    Other Dymo printers *should* work out of the box, but I haven't tested any others.
 
    Further: A printer made by another brand (not Dymo) could probably be made to work with this setup, assuming there is a Linux print driver for it. There is not any Dymo-specific software used, but the setup script only knows how to install Dymo printers. You would need to set up the printer manually or tweak the script.
-
-## The General Process
-
-I put together a video showing generally how everything is installed. Be sure to follow the detailed instructions below when doing these steps yourself.
-
-<a href="https://youtu.be/sH3Qwt0vvbc"><img src="images/video_tn.jpg" alt="Video demonstrating setup of the Raspberry Pi software" height="300"></a>
 
 ## The Steps
 

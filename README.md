@@ -10,13 +10,7 @@ Raspberry Pi's are cheap, and helps reduce our hardware cost, compared to iPads,
 
 ## How it Works
 
-We install the Planning Center Check-Ins app on the Raspberry Pi and set it to start automatically when the Pi boots up. We also install other necessary software and connect the printer with [Cups](https://www.cups.org/).
-
-Once everything is set up, all your Check-Ins stations can see the Pi as another station and print to it, even though it has no display or keyboard.
-
-<img src="images/ipad_and_pi_and_printer.jpg" alt="iPad and Raspberry Pi and Dymo Printer" height="300">
-
-Of course, you can hide the Raspberry Pi away under a table or whatever.
+We install the Planning Center Check-Ins app on the Raspberry Pi and set it to start automatically when the Pi boots up. We also install other necessary software and connect a local printer
 
 ## What You'll Need
 
@@ -113,7 +107,7 @@ Of course, you can hide the Raspberry Pi away under a table or whatever.
     Note: You should still be connected to the Pi. This command will run remotely on the Pi itself.
 
     ```sh
-    curl https://raw.githubusercontent.com/seven1m/rpi-check-in-printer/latest/setup.sh -o setup.sh
+    curl https://raw.githubusercontent.com/mixmastrbrock/rpi-check-in-local/latest/setup.sh -o setup.sh
     chmod +x setup.sh
     ./setup.sh
     ```
@@ -121,14 +115,6 @@ Of course, you can hide the Raspberry Pi away under a table or whatever.
 1.  Assuming you made it through the setup process and you were able to print a test label, you can continue to the next step.
 
     **DO NOT CONTINUE until you can get a test label to print using the setup script above.**
-
-1.  Use VNC to connect to the Pi.
-
-    Download and run [RealVNC](https://www.realvnc.com).
-
-    Use the IP address you discovered earlier plus `:1` to connect to the Pi with RealVNC Viewer. The full address will look like something this: `192.168.X.Y:1`
-
-    The VNC password is the one you set earlier.
 
 1.  Set up the Planning Center Check-Ins Software.
 
@@ -143,12 +129,6 @@ Of course, you can hide the Raspberry Pi away under a table or whatever.
     <img src="images/qz_prompt.png" alt="qz prompt" height="180">
 
     Be sure to select "Remember this decision" and click the "Allow" button.
-
-1.  Point your iPad or other station to the Raspberry Pi:
-
-    Visit the [stations page](https://check-ins.planningcenteronline.com/stations) in Check-Ins and click to open the settings for your iPad station.
-
-    In the "Print Station" drop-down, choose your Raspberry Pi station you just created.
 
 1.  Do a test check-in!
 

@@ -107,7 +107,7 @@ We install the Planning Center Check-Ins app on the Raspberry Pi and set it to s
     Note: You should still be connected to the Pi. This command will run remotely on the Pi itself.
 
     ```sh
-    curl https://raw.githubusercontent.com/mixmastrbrock/rpi-check-in-local/latest/setup.sh -o setup.sh
+    curl https://raw.githubusercontent.com/mixmastrbrock/rpi-check-in-local/master/setup.sh -o setup.sh
     chmod +x setup.sh
     ./setup.sh
     ```
